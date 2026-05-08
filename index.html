@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChuksDev | Web Developer & Remote Professional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SCROLL PROGRESS -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <a href="#home" class="logo">Chuks<span>Dev</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#tools">Tools</a>
+    <a href="#projects">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- MOBILE MENU OVERLAY -->
+<div class="mobile-overlay" id="mobileOverlay">
+  <nav class="mobile-nav">
+    <a href="#home" class="mob-link">Home</a>
+    <a href="#services" class="mob-link">Services</a>
+    <a href="#tools" class="mob-link">Tools</a>
+    <a href="#projects" class="mob-link">Work</a>
+    <a href="#contact" class="mob-link">Contact</a>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="hero-inner">
+    <!-- Left: Text -->
+    <div class="hero-text reveal">
+      <div class="badge">Available for work ✦</div>
+      <h1>Hi, I'm <span class="name-highlight">Chuks</span></h1>
+      <div class="typing-line">
+        <span class="typing-label">I'm a </span>
+        <span id="typing"></span>
+      </div>
+      <p class="hero-sub">
+        Building modern websites & delivering reliable remote support so your business can grow without limits.
+      </p>
+      <div class="hero-ctas">
+        <button class="btn-primary" onclick="scrollToContact()">Hire Me →</button>
+        <a href="#projects" class="btn-ghost">See My Work</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Exp.</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Remote Ready</span></div>
+      </div>
+    </div>
+
+    <!-- Right: Profile -->
+    <div class="hero-visual reveal delay-2">
+      <div class="profile-card">
+        <div class="profile-ring">
+          <img src="images/profile.jpg" alt="Chuks" class="profile-img">
+        </div>
+        <div class="floating-tag tag-1">💻 Web Dev</div>
+        <div class="floating-tag tag-2">🎯 VA</div>
+        <div class="floating-tag tag-3">🤝 Support</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="section-header reveal">
+    <p class="section-tag">What I Offer</p>
+    <h2>Services Built<br>Around Your Needs</h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal delay-1">
+      <div class="service-icon">🌐</div>
+      <h3>Web Development</h3>
+      <p>Modern, responsive websites using HTML, CSS & JavaScript — built for performance and conversion.</p>
+      <div class="service-tag">Frontend</div>
+    </div>
+    <div class="service-card reveal delay-2">
+      <div class="service-icon">🗂️</div>
+      <h3>Virtual Assistant</h3>
+      <p>Reliable support including data entry, research, scheduling and admin tasks done right.</p>
+      <div class="service-tag">Remote</div>
+    </div>
+    <div class="service-card reveal delay-3">
+      <div class="service-icon">💬</div>
+      <h3>Customer Support</h3>
+      <p>Handling customer inquiries with fast, professional and empathetic responses that retain clients.</p>
+      <div class="service-tag">Support</div>
+    </div>
+    <div class="service-card reveal delay-4">
+      <div class="service-icon">⚙️</div>
+      <h3>Admin & Remote Work</h3>
+      <p>Helping businesses stay organized, productive and efficient no matter the time zone.</p>
+      <div class="service-tag">Operations</div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools" class="section section-alt">
+  <div class="section-header reveal">
+    <p class="section-tag">My Stack</p>
+    <h2>Tools &<br>Technologies</h2>
+  </div>
+  <div class="tools-bento reveal">
+    <div class="bento-card bento-wide">
+      <div class="bento-icon">⌨️</div>
+      <h3>Development</h3>
+      <div class="pill-group">
+        <span class="pill">VS Code</span>
+        <span class="pill">GitHub</span>
+        <span class="pill">Tailwind CSS</span>
+        <span class="pill">Bootstrap</span>
+        <span class="pill">HTML & CSS</span>
+        <span class="pill">JavaScript</span>
+      </div>
+    </div>
+    <div class="bento-card">
+      <div class="bento-icon">📄</div>
+      <h3>Office</h3>
+      <div class="pill-group">
+        <span class="pill">Word</span>
+        <span class="pill">Excel</span>
+        <span class="pill">PowerPoint</span>
+        <span class="pill">Google Docs</span>
+        <span class="pill">Sheets</span>
+      </div>
+    </div>
+    <div class="bento-card">
+      <div class="bento-icon">📡</div>
+      <h3>Communication</h3>
+      <div class="pill-group">
+        <span class="pill">Gmail</span>
+        <span class="pill">Slack</span>
+        <span class="pill">Zoom</span>
+        <span class="pill">Teams</span>
+      </div>
+    </div>
+    <div class="bento-card">
+      <div class="bento-icon">📋</div>
+      <h3>Management</h3>
+      <div class="pill-group">
+        <span class="pill">Trello</span>
+        <span class="pill">Asana</span>
+        <span class="pill">Calendly</span>
+      </div>
+    </div>
+    <div class="bento-card">
+      <div class="bento-icon">🎧</div>
+      <h3>Support Tools</h3>
+      <div class="pill-group">
+        <span class="pill">Zendesk</span>
+        <span class="pill">Freshdesk</span>
+        <span class="pill">HubSpot</span>
+        <span class="pill">Intercom</span>
+      </div>
+    </div>
+    <div class="bento-card">
+      <div class="bento-icon">🎨</div>
+      <h3>Design & More</h3>
+      <div class="pill-group">
+        <span class="pill">Canva</span>
+        <span class="pill">Dropbox</span>
+        <span class="pill">Chrome DevTools</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="section-header reveal">
+    <p class="section-tag">Portfolio</p>
+    <h2>My Work &<br>Experience</h2>
+  </div>
+
+  <div class="projects-filter reveal">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="web">Web Dev</button>
+    <button class="filter-btn" data-filter="va">VA & Support</button>
+  </div>
+
+  <div class="projects-grid">
+    <div class="project-card reveal delay-1" data-cat="web">
+      <div class="project-img-wrap">
+        <img src="images/business.jpg" alt="Business Landing Page">
+        <div class="project-overlay"><span>View Project</span></div>
+      </div>
+      <div class="project-info">
+        <span class="project-tag">Web Dev</span>
+        <h3>Business Landing Page</h3>
+        <p>Modern responsive site focused on clean UI and high conversion.</p>
+      </div>
+    </div>
+
+    <div class="project-card reveal delay-2" data-cat="web">
+      <div class="project-img-wrap">
+        <img src="images/portfolio.jpg" alt="Portfolio Website">
+        <div class="project-overlay"><span>View Project</span></div>
+      </div>
+      <div class="project-info">
+        <span class="project-tag">Web Dev</span>
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio with smooth animations and contact integration.</p>
+      </div>
+    </div>
+
+    <div class="project-card reveal delay-3" data-cat="web">
+      <div class="project-img-wrap">
+        <img src="images/dashboardui.jpg" alt="Dashboard UI">
+        <div class="project-overlay"><span>View Project</span></div>
+      </div>
+      <div class="project-info">
+        <span class="project-tag">Web Dev</span>
+        <h3>Dashboard UI</h3>
+        <p>Clean task management dashboard with user-friendly layout.</p>
+      </div>
+    </div>
+
+    <div class="project-card reveal delay-1" data-cat="va">
+      <div class="project-img-wrap">
+        <img src="images/support.jpg" alt="Customer Support">
+        <div class="project-overlay"><span>View Project</span></div>
+      </div>
+      <div class="project-info">
+        <span class="project-tag">Support</span>
+        <h3>Customer Support</h3>
+        <p>Managed and resolved tickets using helpdesk tools efficiently.</p>
+      </div>
+    </div>
+
+    <div class="project-card reveal delay-2" data-cat="va">
+      <div class="project-img-wrap">
+        <img src="images/trello.jpg" alt="Task Management">
+        <div class="project-overlay"><span>View Project</span></div>
+      </div>
+      <div class="project-info">
+        <span class="project-tag">VA</span>
+        <h3>Task Management</h3>
+        <p>Organised tasks using Kanban boards to boost team productivity.</p>
+      </div>
+    </div>
+
+    <div class="project-card reveal delay-3" data-cat="va">
+      <div class="project-img-wrap">
+        <img src="images/dashboard.jpg" alt="Project Tracking">
+        <div class="project-overlay"><span>View Project</span></div>
+      </div>
+      <div class="project-info">
+        <span class="project-tag">VA</span>
+        <h3>Project Tracking</h3>
+        <p>Monitored timelines and milestones via structured dashboards.</p>
+      </div>
+    </div>
+
+    <div class="project-card reveal delay-1" data-cat="va">
+      <div class="project-img-wrap">
+        <img src="images/calendly.jpg" alt="Scheduling">
+        <div class="project-overlay"><span>View Project</span></div>
+      </div>
+      <div class="project-info">
+        <span class="project-tag">VA</span>
+        <h3>Client Scheduling</h3>
+        <p>Coordinated meetings and bookings with Calendly for clients.</p>
+      </div>
+    </div>
+
+    <div class="project-card reveal delay-2" data-cat="va">
+      <div class="project-img-wrap">
+        <img src="images/slack.jpg" alt="Slack Communication">
+        <div class="project-overlay"><span>View Project</span></div>
+      </div>
+      <div class="project-info">
+        <span class="project-tag">Support</span>
+        <h3>Team Communication</h3>
+        <p>Collaborated with distributed teams via Slack channels.</p>
+      </div>
+    </div>
+
+    <div class="project-card reveal delay-3" data-cat="va">
+      <div class="project-img-wrap">
+        <img src="images/email.jpg" alt="Email Support">
+        <div class="project-overlay"><span>View Project</span></div>
+      </div>
+      <div class="project-info">
+        <span class="project-tag">Support</span>
+        <h3>Email Support</h3>
+        <p>Handled email inquiries professionally, improving resolution speed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section section-alt">
+  <div class="section-header reveal">
+    <p class="section-tag">Let's Connect</p>
+    <h2>Ready to Work<br>Together?</h2>
+  </div>
+  <div class="contact-wrap reveal">
+    <div class="contact-card">
+      <div class="contact-icon">📧</div>
+      <h3>Email Me</h3>
+      <a href="mailto:mcstevensonchukwunenye@gmail.com" class="contact-link">mcstevensonchukwunenye@gmail.com</a>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">💼</div>
+      <h3>LinkedIn</h3>
+      <a href="https://www.linkedin.com/in/chukwunenye-mcstevenson" target="_blank" class="contact-link">Connect on LinkedIn</a>
+    </div>
+    <div class="contact-card whatsapp-card">
+      <div class="contact-icon">💬</div>
+      <h3>WhatsApp</h3>
+      <a href="https://wa.me/2349138266165" target="_blank" class="contact-link">Chat on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 ChuksDev · Built with passion in Nigeria 🇳🇬</p>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/2349138266165" target="_blank" class="whatsapp-float" aria-label="WhatsApp">💬</a>
+
+<script src="script.js"></script>
+</body>
+</html>
