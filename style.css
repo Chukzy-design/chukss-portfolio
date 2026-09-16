@@ -1576,3 +1576,33 @@ h1, h2, h3, h4 {
   .support-gallery { grid-template-columns: repeat(2, 1fr); }
   .lightbox-close { top: 14px; right: 14px; }
 }
+
+/* MOBILE HERO FIX */
+@media screen and (max-width: 768px) {
+  .hero-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .hero-text {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .hero-visual {
+    width: 100% !important;
+    order: 2 !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 35px !important;
+  }
+
+  .hero-text {
+    order: 1 !important;
+  }
+
+  .floating-tag {
+    display: none !important;
+  }
+}
