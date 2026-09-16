@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Chuks — Frontend Developer &amp; UI/UX Designer</title>
+<meta name="description" content="Get in touch with Chuks about a website, UI/UX design or mobile app interface project.">
+<link rel="canonical" href="https://chukzy-design.github.io/chukss-portfolio/contact.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="navbar" id="navbar">
+  <a href="index.html" class="logo">Chuks<span>Dev</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a href="contact.html" class="btn-primary nav-cta">Let's Work Together →</a>
+  <button id="menuBtn" class="menu-btn" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-overlay" id="mobileOverlay">
+  <nav class="mobile-nav">
+    <a href="index.html" class="mob-link">Home</a>
+    <a href="about.html" class="mob-link">About</a>
+    <a href="services.html" class="mob-link">Services</a>
+    <a href="projects.html" class="mob-link">Projects</a>
+    <a href="skills.html" class="mob-link">Skills</a>
+    <a href="contact.html" class="mob-link">Contact</a>
+    <a href="contact.html" class="btn-primary mob-cta">Let's Work Together →</a>
+  </nav>
+</div>
+
+<!-- PAGE HERO -->
+<section class="cs-hero">
+  <div class="hero-bg"><div class="blob blob-1"></div><div class="grid-overlay"></div></div>
+  <div class="cs-hero-inner">
+    <div class="page-hero-tag">Let's Connect</div>
+    <h1 class="cs-title">Let's Build Something.</h1>
+    <p class="cs-sub">Have an idea, project or design challenge? I'd love to hear about it.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+  <div class="section-inner">
+    <div class="contact-wrap">
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="field" id="field-name">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" placeholder="Your name" autocomplete="name">
+            <span class="error-msg"></span>
+          </div>
+          <div class="field" id="field-email">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" placeholder="you@email.com" autocomplete="email">
+            <span class="error-msg"></span>
+          </div>
+        </div>
+        <div class="field" id="field-type">
+          <label for="cf-type">Project Type</label>
+          <select id="cf-type" name="type">
+            <option value="">Select a project type</option>
+            <option>Website Design &amp; Development</option>
+            <option>UI/UX Design</option>
+            <option>Mobile App Interface</option>
+            <option>IT Support</option>
+            <option>Something Else</option>
+          </select>
+          <span class="error-msg"></span>
+        </div>
+        <div class="field" id="field-message">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" placeholder="Tell me a bit about your idea or project..."></textarea>
+          <span class="error-msg"></span>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn-primary" id="submitBtn">
+            <span class="spinner" id="submitSpinner"></span>
+            <span id="submitLabel">Send Message →</span>
+          </button>
+          <span class="form-status" id="formStatus"></span>
+        </div>
+      </form>
+
+      <div class="contact-methods reveal delay-1">
+        <div class="contact-card">
+          <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg></div>
+          <div><h3>Email Me</h3><a href="mailto:mcstevensonchukwunenye@gmail.com" class="contact-link">mcstevensonchukwunenye@gmail.com</a></div>
+        </div>
+        <div class="contact-card">
+          <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="7.5" y1="10.5" x2="7.5" y2="16.5"/><circle cx="7.5" cy="7.2" r="0.6" fill="currentColor"/><path d="M11.5 16.5v-3.7c0-1.4 1-2.3 2.3-2.3 1.3 0 2.2.9 2.2 2.3v3.7"/></svg></div>
+          <div><h3>LinkedIn</h3><a href="https://www.linkedin.com/in/chukwunenye-mcstevenson" target="_blank" rel="noopener" class="contact-link">Connect on LinkedIn</a></div>
+        </div>
+        <div class="contact-card">
+          <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.7 2.8 5.6 3.1 5.6 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.2 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></div>
+          <div><h3>GitHub</h3><a href="https://github.com/chukzy-design" target="_blank" rel="noopener" class="contact-link">github.com/chukzy-design</a></div>
+        </div>
+        <div class="contact-card">
+          <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M20.5 3.5A10 10 0 0 0 3.6 16.4L2 22l5.7-1.5A10 10 0 1 0 20.5 3.5z"/><path d="M8.5 8.5c.3-.7.6-.7 1-.7.3 0 .6 0 .8.5s.7 1.7.8 1.8c.1.2.1.4 0 .6-.1.2-.2.3-.4.5-.2.2-.4.3-.2.6.2.4 1 1.5 2 2.3 1.1 1 1.6 1.1 1.9.9.2-.1.5-.5.7-.8s.5-.3.8-.2 1.7.8 2 .9c.3.1.5.2.5.4.1.3.1 1-.3 1.6-.4.7-1.7 1.3-2.4 1.3-.6 0-2.6-.2-4.7-2-2.3-2-3.5-4.3-3.6-4.5-.1-.2-1-1.4-1-2.7 0-1.3.7-1.9 1-2.2z"/></svg></div>
+          <div><h3>WhatsApp</h3><a href="https://wa.me/2349138266165" target="_blank" rel="noopener" class="contact-link">Chat on WhatsApp</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Chuks<span>Dev</span></a>
+      <p>Frontend Developer &amp; UI/UX Designer</p>
+    </div>
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="footer-socials">
+      <a href="https://github.com/chukzy-design" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.7 2.8 5.6 3.1 5.6 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.2 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a>
+      <a href="https://www.linkedin.com/in/chukwunenye-mcstevenson" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="7.5" y1="10.5" x2="7.5" y2="16.5"/><circle cx="7.5" cy="7.2" r="0.6" fill="currentColor"/><path d="M11.5 16.5v-3.7c0-1.4 1-2.3 2.3-2.3 1.3 0 2.2.9 2.2 2.3v3.7"/></svg></a>
+      <a href="https://wa.me/2349138266165" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M20.5 3.5A10 10 0 0 0 3.6 16.4L2 22l5.7-1.5A10 10 0 1 0 20.5 3.5z"/></svg></a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 ChuksDev. All rights reserved. Built with care in Nigeria 🇳🇬</div>
+</footer>
+
+<a href="https://wa.me/2349138266165" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp" rel="noopener">
+  <svg viewBox="0 0 24 24"><path d="M20.5 3.5A10 10 0 0 0 3.6 16.4L2 22l5.7-1.5A10 10 0 1 0 20.5 3.5zm-8.5 15a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 18.5zm4.4-5.9c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.6.1s-.6.8-.8 1c-.1.1-.3.2-.5.1a6.6 6.6 0 0 1-1.9-1.2 7 7 0 0 1-1.3-1.6c-.1-.2 0-.4.1-.5s.3-.3.4-.5a.6.6 0 0 0 .1-.5c0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-1 2.2c0 1.3 1 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6a3.6 3.6 0 0 0 1.6.1c.5-.1 1.4-.6 1.6-1.1s.2-1 .1-1.1-.2-.2-.4-.3z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>

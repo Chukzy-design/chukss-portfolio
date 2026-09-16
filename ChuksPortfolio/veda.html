@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veda — AI-Powered Learning Platform | Chuks</title>
+<meta name="description" content="Case study: Veda, an AI-powered learning platform built as a final-year team project. Frontend development and UI/UX design for the Android student app and React admin dashboard.">
+<link rel="canonical" href="https://chukzy-design.github.io/chukss-portfolio/veda.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="navbar" id="navbar">
+  <a href="index.html" class="logo">Chuks<span>Dev</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a href="contact.html" class="btn-primary nav-cta">Let's Work Together →</a>
+  <button id="menuBtn" class="menu-btn" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-overlay" id="mobileOverlay">
+  <nav class="mobile-nav">
+    <a href="index.html" class="mob-link">Home</a>
+    <a href="about.html" class="mob-link">About</a>
+    <a href="services.html" class="mob-link">Services</a>
+    <a href="projects.html" class="mob-link">Projects</a>
+    <a href="skills.html" class="mob-link">Skills</a>
+    <a href="contact.html" class="mob-link">Contact</a>
+    <a href="contact.html" class="btn-primary mob-cta">Let's Work Together →</a>
+  </nav>
+</div>
+
+<!-- CASE STUDY HERO -->
+<section class="cs-hero">
+  <div class="hero-bg"><div class="blob blob-1"></div><div class="grid-overlay"></div></div>
+  <div class="cs-hero-inner">
+    <a href="projects.html" class="cs-back">← Back to Projects</a>
+    <div class="pf-tag">👥 Team Project · Final Year</div>
+    <h1 class="cs-title">Veda — AI-Powered Learning Platform</h1>
+    <p class="cs-sub">Veda is an AI-powered learning platform designed to help students preparing for examinations study through a more interactive and personalized learning experience.</p>
+    <div class="cs-meta">
+      <div class="cs-meta-item"><h4>My Role</h4><p>Frontend Development &amp; UI/UX Design</p></div>
+      <div class="cs-meta-item"><h4>Team</h4><p>Collaborative — built with a team</p></div>
+      <div class="cs-meta-item"><h4>Platforms</h4><p>Android App &amp; Web Admin Dashboard</p></div>
+      <div class="cs-meta-item"><h4>Built With</h4><p>Kotlin, Jetpack Compose, React, Tailwind CSS, Supabase</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="cs-section">
+  <div class="cs-section-inner">
+    <p class="cs-eyebrow">Overview</p>
+    <h2>What Veda Is</h2>
+    <p>Veda is an AI-powered learning platform built to help students preparing for exams study in a more organized, interactive and personalized way. The platform is made up of two connected surfaces: a native Android app for students, and a web admin dashboard used to manage and administer the platform.</p>
+    <p>Veda was developed collaboratively by our team as a final-year project. My primary contributions were focused on frontend development and UI/UX design across both the student app and the admin dashboard.</p>
+  </div>
+</section>
+
+<!-- PROBLEM & GOAL -->
+<section class="cs-section" style="border-top:1px solid var(--border-light); background:var(--bg-alt);">
+  <div class="cs-section-inner cs-two-col">
+    <div>
+      <p class="cs-eyebrow">The Problem</p>
+      <h3>Studying for exams is often unstructured</h3>
+      <p>Students preparing for examinations need accessible, organized and engaging ways to study. Without structure, study sessions can feel scattered — jumping between subjects with no clear plan, no easy way to track progress, and no support in the moment when a concept doesn't make sense.</p>
+    </div>
+    <div>
+      <p class="cs-eyebrow">The Goal</p>
+      <h3>Make studying feel guided, not overwhelming</h3>
+      <p>Our goal was to give students one place to study with structure: quizzes and flashcards to test recall, study plans to stay on track, focus tools to manage study sessions, and an AI tutor to lean on when they're stuck — all wrapped in an interface that feels calm rather than cluttered.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DESIGN -->
+<section class="cs-section">
+  <div class="cs-section-inner wide">
+    <p class="cs-eyebrow">The Design</p>
+    <h2>Designing Around How Students Actually Study</h2>
+    <p style="max-width:720px;">The interface needed to hold a lot of functionality — quizzes, spaced-repetition flashcards, study plans, an AI tutor, notes, and focus tools — without feeling crowded. I approached this by grouping related features into clear sections, keeping navigation shallow, and reusing a consistent set of components (cards, chips, progress indicators) so every screen felt like part of the same system rather than a patchwork of features.</p>
+
+    <div class="cs-visual-block reveal" style="margin-top:36px; flex-direction:column; gap:28px; padding:40px;">
+      <div style="width:100%;">
+        <p class="cs-eyebrow" style="margin-bottom:14px;">Student App</p>
+        <div class="support-gallery gallery-mobile-shots">
+          <div class="support-shot mob-shot"><img src="images/veda-mobile-splash.jpg" alt="Veda splash screen" loading="lazy"><span class="shot-label">Splash</span></div>
+          <div class="support-shot mob-shot"><img src="images/veda-mobile-onboarding.jpg" alt="Onboarding — selecting academic level, from high school through professional certification" loading="lazy"><span class="shot-label">Onboarding</span></div>
+          <div class="support-shot mob-shot"><img src="images/veda-mobile-home.jpg" alt="Home — daily streak and subject mastery" loading="lazy"><span class="shot-label">Home</span></div>
+          <div class="support-shot mob-shot"><img src="images/veda-mobile-planner.jpg" alt="Smart Study Plan — AI-scheduled weekly tasks" loading="lazy"><span class="shot-label">Study Plan</span></div>
+          <div class="support-shot mob-shot"><img src="images/veda-mobile-analytics.jpg" alt="Performance — accuracy breakdown and session stats" loading="lazy"><span class="shot-label">Analytics</span></div>
+          <div class="support-shot mob-shot"><img src="images/veda-mobile-profile.jpg" alt="Profile and appearance settings" loading="lazy"><span class="shot-label">Profile</span></div>
+        </div>
+      </div>
+      <div style="width:100%;">
+        <p class="cs-eyebrow" style="margin-bottom:14px;">Admin Dashboard</p>
+        <div class="support-gallery gallery-admin-shots">
+          <div class="support-shot wide-shot"><img src="images/veda-admin-dashboard.jpg" alt="Admin dashboard — platform overview with live stats" loading="lazy"><span class="shot-label">Dashboard</span></div>
+          <div class="support-shot wide-shot"><img src="images/veda-admin-analytics.jpg" alt="Admin analytics — revenue and usage breakdown" loading="lazy"><span class="shot-label">Analytics</span></div>
+          <div class="support-shot wide-shot"><img src="images/veda-admin-ai-tutor-logs.jpg" alt="AI Tutor Logs — monitoring Gemini-powered conversations" loading="lazy"><span class="shot-label">AI Tutor Logs</span></div>
+          <div class="support-shot wide-shot"><img src="images/veda-admin-subscriptions.jpg" alt="Subscriptions — Pro billing and revenue via Paystack" loading="lazy"><span class="shot-label">Subscriptions</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-role-grid" style="margin-top:48px;">
+      <div class="cs-role-card">
+        <h3>Student App — Design Decisions</h3>
+        <ul>
+          <li>Onboarding lets students pick their academic level — from high school through undergraduate, postgraduate, and professional certifications like the CPA, CFA and Bar exam — so content can be tailored from the first screen</li>
+          <li>Quiz and flashcard screens use one consistent card pattern, so switching study modes feels familiar</li>
+          <li>The SM-2 spaced-repetition rating (Again / Hard / Good / Easy) is presented as a clear, low-friction choice rather than a technical rating system</li>
+          <li>Focus tools (Pomodoro timer, Daily Zen) sit alongside study features, not buried in settings</li>
+          <li>The Gemini-powered AI Tutor is reachable as a quick action from Home, not several taps deep</li>
+        </ul>
+      </div>
+      <div class="cs-role-card">
+        <h3>Admin Dashboard — Design Decisions</h3>
+        <ul>
+          <li>A collapsible sidebar keeps the 12 admin sections (Users, Question Bank, Study Plans, AI Tutor Logs, and more) organized without overwhelming the main view</li>
+          <li>Dark/light theme support for comfortable extended use</li>
+          <li>Consistent card and table patterns across Analytics, Subscriptions and Support so admins don't relearn the interface per page</li>
+          <li>Subscription management covers tiered Pro plans (monthly / 6-month / yearly) with live revenue tracking via Paystack</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MY CONTRIBUTION -->
+<section class="cs-section" style="border-top:1px solid var(--border-light); background:var(--bg-alt);">
+  <div class="cs-section-inner wide">
+    <p class="cs-eyebrow">My Contribution</p>
+    <h2>My Role on the Team</h2>
+    <p style="max-width:720px; margin-bottom: 36px;">Veda was built by a team. My work was concentrated on frontend development and UI/UX design across both platforms — I did not build the backend, the AI system, or the database, which were part of the wider team effort.</p>
+    <div class="cs-role-grid">
+      <div class="cs-role-card">
+        <h3>UI/UX Design</h3>
+        <ul>
+          <li>User interface design</li>
+          <li>Layout design</li>
+          <li>Visual hierarchy</li>
+          <li>User flows</li>
+          <li>Component and interface consistency</li>
+          <li>Mobile interface design</li>
+          <li>Overall user experience</li>
+        </ul>
+      </div>
+      <div class="cs-role-card">
+        <h3>Frontend Development</h3>
+        <ul>
+          <li>Building frontend interfaces</li>
+          <li>Translating designs into functional screens</li>
+          <li>Responsive interface implementation</li>
+          <li>Interactive UI elements</li>
+          <li>Frontend integration with the team's application functionality</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHALLENGES & SOLUTIONS -->
+<section class="cs-section">
+  <div class="cs-section-inner">
+    <p class="cs-eyebrow">Challenges &amp; Solutions</p>
+    <h2>What Was Hard, and How I Approached It</h2>
+    <div class="cs-callout-grid">
+      <div class="cs-callout">
+        <h4>⚠️ Keeping a feature-rich app feeling simple</h4>
+        <p><strong>Challenge:</strong> Quizzes, flashcards, notes, focus tools and an AI tutor all competing for space in one app.</p>
+      </div>
+      <div class="cs-callout">
+        <h4>✅ A consistent component system</h4>
+        <p><strong>Solution:</strong> I reused a small set of card and navigation patterns everywhere, so each new feature felt like it belonged rather than adding visual noise.</p>
+      </div>
+      <div class="cs-callout">
+        <h4>⚠️ Making spaced repetition approachable</h4>
+        <p><strong>Challenge:</strong> The SM-2 algorithm behind flashcards is technical — the interface couldn't expose that complexity to a stressed exam-prep student.</p>
+      </div>
+      <div class="cs-callout">
+        <h4>✅ Plain-language rating interface</h4>
+        <p><strong>Solution:</strong> I designed the rating step as four simple, friendly choices, hiding the scheduling logic entirely behind the interface.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOME -->
+<section class="cs-section" style="border-top:1px solid var(--border-light); background:var(--bg-alt);">
+  <div class="cs-section-inner">
+    <p class="cs-eyebrow">Outcome</p>
+    <h2>What the Team Built</h2>
+    <p>By the time of our academic defence, the team had a fully built Android app — covering onboarding, login, subject/level selection, a quiz engine, flashcards with spaced repetition, study plans, an AI tutor, notes, focus tools, and settings — alongside a complete 12-page React admin dashboard for managing the platform.</p>
+  </div>
+</section>
+
+<!-- WHAT I LEARNED -->
+<section class="cs-section">
+  <div class="cs-section-inner wide">
+    <p class="cs-eyebrow">What I Learned</p>
+    <h2>Beyond the Interface</h2>
+    <div class="cs-learned-grid">
+      <div class="cs-learned-item">Working as part of a team on a real product structure, not just a solo assignment.</div>
+      <div class="cs-learned-item">Thinking in UI/UX terms — user flows, hierarchy and consistency — across two very different platforms.</div>
+      <div class="cs-learned-item">Turning designs into working frontend code, and the compromises that come with that translation.</div>
+      <div class="cs-learned-item">Designing for a specific kind of user under pressure: a student trying to study efficiently before an exam.</div>
+      <div class="cs-learned-item">Explaining frontend and design decisions clearly to both technical and non-technical audiences.</div>
+      <div class="cs-learned-item">Keeping a consistent design system across many features so the product feels like one coherent app.</div>
+    </div>
+  </div>
+</section>
+
+<div class="cs-back-footer">
+  <a href="projects.html" class="btn-ghost">← Back to Projects</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <div>
+    <img id="lightboxImg" src="" alt="">
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Chuks<span>Dev</span></a>
+      <p>Frontend Developer &amp; UI/UX Designer</p>
+    </div>
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="footer-socials">
+      <a href="https://github.com/chukzy-design" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.7 2.8 5.6 3.1 5.6 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.2 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a>
+      <a href="https://www.linkedin.com/in/chukwunenye-mcstevenson" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="7.5" y1="10.5" x2="7.5" y2="16.5"/><circle cx="7.5" cy="7.2" r="0.6" fill="currentColor"/><path d="M11.5 16.5v-3.7c0-1.4 1-2.3 2.3-2.3 1.3 0 2.2.9 2.2 2.3v3.7"/></svg></a>
+      <a href="https://wa.me/2349138266165" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M20.5 3.5A10 10 0 0 0 3.6 16.4L2 22l5.7-1.5A10 10 0 1 0 20.5 3.5z"/></svg></a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 ChuksDev. All rights reserved. Built with care in Nigeria 🇳🇬</div>
+</footer>
+
+<a href="https://wa.me/2349138266165" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp" rel="noopener">
+  <svg viewBox="0 0 24 24"><path d="M20.5 3.5A10 10 0 0 0 3.6 16.4L2 22l5.7-1.5A10 10 0 1 0 20.5 3.5zm-8.5 15a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 18.5zm4.4-5.9c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.6.1s-.6.8-.8 1c-.1.1-.3.2-.5.1a6.6 6.6 0 0 1-1.9-1.2 7 7 0 0 1-1.3-1.6c-.1-.2 0-.4.1-.5s.3-.3.4-.5a.6.6 0 0 0 .1-.5c0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-1 2.2c0 1.3 1 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6a3.6 3.6 0 0 0 1.6.1c.5-.1 1.4-.6 1.6-1.1s.2-1 .1-1.1-.2-.2-.4-.3z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
