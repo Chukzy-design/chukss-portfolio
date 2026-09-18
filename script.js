@@ -79,7 +79,7 @@ revealEls.forEach(el => revealObserver.observe(el));
 // ===========================
 const typingEl = document.getElementById("typing");
 if (typingEl) {
-  const words = ["Frontend Developer", "UI/UX Designer", "Problem Solver"];
+  const words = ["Frontend Developer", "UI/UX Designer", "SaaS Frontend Specialist", "Problem Solver"];
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   if (prefersReducedMotion) {
